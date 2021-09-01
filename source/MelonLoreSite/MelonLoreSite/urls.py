@@ -19,5 +19,5 @@ from .views import main
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
-    path('', main)
+    path('', include('frontend.urls'))
 ]
